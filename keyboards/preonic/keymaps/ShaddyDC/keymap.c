@@ -83,9 +83,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+-------------+------+------+------+------+------|
  * |   ~  |   !  |   @  |   ?  |   $  |   %  | pg d |  end |   *  |   (  |   )  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * | Del  |   [  |   {  |   =  |   (  |   *  |   +  |   )  |   &  |   }  |   ]  |  |   |
+ * | Del  |   [  |   {  |   <  |   (  |   *  |   +  |   )  |   >  |   }  |   ]  |  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |  F7  |  F8  |  F9  |  F10 |  F11 | pg u | home |ISO | | Home | End  |      |
+ * |      |  F7  |  F8  |   =  |   &  |  F11 | pg u | home |ISO | | Home | End  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
@@ -93,8 +93,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_LOWER] = LAYOUT_preonic_grid(
   KC_F1,         KC_F2,      KC_F3,      KC_F4,      KC_F5,   KC_F6,      KC_F7,       KC_F8,     KC_F9,     KC_F10,     KC_F11,     KC_F12,
   ALGR(KC_RBRC), KC_EXLM,    ALGR(KC_Q), S(KC_MINS), KC_DLR,  KC_PERC,    KC_PAGE_DOWN,KC_END,    KC_ASTR,   KC_LPRN,    KC_RPRN,    KC_BSPC,
-  KC_DEL,        ALGR(KC_8), ALGR(KC_7), S(KC_0),    S(KC_8), S(KC_RBRC), KC_RBRC,     S(KC_9),   S(KC_6),   ALGR(KC_0), ALGR(KC_9), ALGR(KC_NUBS),
-  _______,       KC_F7,      KC_F8,      KC_F9,      KC_F10,  KC_F11,     KC_PAGE_UP,  KC_HOME,  S(KC_NUBS), KC_HOME,    KC_END,     _______,
+  KC_DEL,        ALGR(KC_8), ALGR(KC_7), KC_NUBS,    S(KC_8), S(KC_RBRC), KC_RBRC,     S(KC_9),   S(KC_NUBS),ALGR(KC_0), ALGR(KC_9), ALGR(KC_NUBS),
+  _______,       KC_F7,      KC_F8,      S(KC_0),    S(KC_6), KC_F11,     KC_PAGE_UP,  KC_HOME,  S(KC_NUBS), KC_HOME,    KC_END,     _______,
   _______,       _______,    _______,    _______,    _______, _______,    _______,     _______,   KC_MNXT,   KC_VOLD,    KC_VOLU,    KC_MPLY
 ),
 
